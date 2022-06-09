@@ -6,9 +6,9 @@ import CustomLink from './CustomLink';
 const NavigationBar = () => {
     return (
 
-        <Navbar collapseOnSelect expand="lg" bg="*" >
+        <Navbar sticky="top" collapseOnSelect expand="lg" bg="*" >
             <Container>
-                <Navbar.Brand as={Link} to='/'>Abdul</Navbar.Brand>
+                <Navbar.Brand as={Link} className='fw-bold' to='/'>Abdul</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">

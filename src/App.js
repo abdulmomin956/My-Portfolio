@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Projects from './pages/Projects/Projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from './pages/shared/NavigationBar';
+import './pages/shared/custom.css'
 
 function App() {
   return (
