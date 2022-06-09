@@ -1,0 +1,6 @@
+.banner {
+    background-image: url('../../images/60d447e7b741c65631a479f9_elipse\ 1.svg'), url('../../images/Blue-Circle-White-BG.svg'), url('../../images/Blue-Circle-White-BG.svg');
+    background-position: left bottom, 300px -600px, -200px -402px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: contain, 1400px 1400px, 4000px 4000px;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="689px" height="716px" viewBox="0 0 689 716" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 2</title>
+    <defs>
+        <linearGradient x1="50%" y1="2.69214527%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#66C0FF" offset="0%"></stop>
+            <stop stop-color="#001E5A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Features" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-969.000000, -870.000000)" id="编组-3">
+            <g transform="translate(-184.000000, 870.000000)">
+                <g id="Group-2" transform="translate(1153.500000, 0.000000)">
+                    <circle id="Oval" fill="#99D5FF" opacity="0.3" cx="344" cy="344" r="344"></circle>
+                    <path d="M172,397 C258.984848,397 329.5,467.515152 329.5,554.5 C329.5,641.484848 258.984848,712 172,712 C85.0151519,712 14.5,641.484848 14.5,554.5 C14.5,467.515152 85.0151519,397 172,397 Z" id="Oval-Copy" stroke="url(#linearGradient-1)" stroke-width="7" fill-opacity="0" fill="#D8D8D8" opacity="0.2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

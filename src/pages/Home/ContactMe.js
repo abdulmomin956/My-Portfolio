@@ -33,13 +33,13 @@ const ContactMe = () => {
         <section className='py-5'>
             <h3 className='text-center'>Contact Me</h3>
             <Form ref={form} onSubmit={sendEmail} className='container'>
-                <div className='d-flex w-100 gap-4 my-4'>
-                    <div className='d-flex flex-column w-50 justify-content-between gap-4'>
+                <div className='d-flex flex-column flex-lg-row w-100 gap-4 my-4'>
+                    <div className='d-flex flex-column w-100 justify-content-between gap-4'>
                         <Form.Control required name="user_name" placeholder='First Name:' type="text" />
                         <Form.Control required name="user_email" placeholder='Your Email:' type="email" />
                         <Form.Control required name="subject" placeholder='Your Subject:' type="text" />
                     </div>
-                    <div className='w-50'>
+                    <div className='w-100'>
                         <textarea required placeholder='Your Message:' name="message" id="" className='w-100 h-100 border rounded p-1' ></textarea>
                     </div>
                 </div>
