@@ -1,11 +1,10 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import photo from '../../images/for portfolio.png'
 import ContactMe from './ContactMe';
 import Projects from './Projects';
+import pdf from '../../images/Abdul_Momin_Resume.pdf'
 
 const Home = () => {
-    // document.title = 'HOME - Abdul'
     return (
         <main>
             <div className='border '>
@@ -15,7 +14,7 @@ const Home = () => {
                         <p>Obviously I'm a Web Developer with over 1 years of experience. Experienced with all stages of the development
 
                         </p>
-                        <Button variant="outline-primary" >Download Resume</Button>
+                        <a href={pdf} target='_blank' rel='noopener noreferrer' className='btn btn-outline-primary' >Download Resume</a>
                     </div>
                     <div className=' h-100 mt-auto'>
                         <img width='100%' src={photo} alt="" />
