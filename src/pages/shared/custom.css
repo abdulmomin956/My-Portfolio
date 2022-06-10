@@ -1,3 +1,24 @@
 .vh-200 {
     height: 200vh;
 }
+
+.card-image .card-body {
+    background-color: rgba(0, 119, 255, 0.658);
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+.card-image:hover .card-body {
+    opacity: 1;
+    transition-duration: .3s;
+}
+
+.card-image img {
+    transform: scale(1);
+    transition: transform .3s ease-in;
+}
+
+.card-image:hover img {
+    transform: scale(1.05);
+    transition: transform .3s ease-in;
+}

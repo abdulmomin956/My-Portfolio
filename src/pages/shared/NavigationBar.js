@@ -6,7 +6,7 @@ import CustomLink from './CustomLink';
 const NavigationBar = () => {
     const [colorChange, setColorchange] = useState(false);
     const changeNavbarColor = () => {
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 10) {
             setColorchange(true);
         }
         else {
@@ -16,7 +16,7 @@ const NavigationBar = () => {
     window.addEventListener('scroll', changeNavbarColor);
     return (
 
-        <Navbar className={colorChange ? 'bg-white' : 'bg-transparent'} sticky="top" collapseOnSelect expand="lg"  >
+        <Navbar className={colorChange ? 'bg-white shadow' : 'bg-transparent shadow-none'} sticky="top" collapseOnSelect expand="lg"  >
             <Container>
                 <Navbar.Brand as={Link} className='fw-bold' to='/'>Abdul</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
