@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 const Projects = () => {
     const [data, setData] = useState([])
+    const navigate = useNavigate();
     useEffect(() => {
         fetch('mydata.json')
             .then(res => res.json())
@@ -31,6 +33,7 @@ const Projects = () => {
                     }
                 </div>
             </div>
+            <button onClick={() => navigate('/projects')} className='mx-auto d-block btn btn-primary'>See More</button>
         </div>
     );
 };
