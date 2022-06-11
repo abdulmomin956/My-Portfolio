@@ -32,3 +32,47 @@
     text-align: center;
     background: rgb(0, 145, 255)
 }
+
+.circle2 {
+    width: 60px;
+    height: 60px;
+    line-height: 10px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    background: rgb(189, 189, 189)
+}
+
+.popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    overflow: scroll;
+}
+
+.popup-image span {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(157, 157, 157);
+    cursor: pointer;
+    z-index: 100;
+    text-shadow: 5px, 5px, 10px, rgb(0, 0, 0);
+}
+
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -15rem);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
