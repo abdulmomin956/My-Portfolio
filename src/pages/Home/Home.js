@@ -6,6 +6,7 @@ import pdf from '../../images/Abdul_Momin_Resume.pdf'
 import './Home.css'
 
 const Home = () => {
+    document.title = 'HOME - Abdul'
     return (
         <main>
             <div className='border banner' style={{ marginTop: '-3.5rem' }}>

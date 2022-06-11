@@ -24,7 +24,7 @@ const NavigationBar = () => {
                     <Nav className="ms-auto gap-3">
                         <CustomLink to='/'>HOME</CustomLink>
                         <CustomLink to='/projects'>PROJECTS</CustomLink>
-                        <CustomLink to='/blogs'>BLOGS</CustomLink>
+                        <CustomLink to='/blog'>BLOG</CustomLink>
                         <CustomLink to='/about'>ABOUT</CustomLink>
                         {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

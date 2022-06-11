@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import deadIcon from '../../images/dead-svgrepo-com.svg'
 
 const NotFound = () => {
+    document.title = 'NOT FOUND!'
     return (
         <div className='w-25 mx-auto text-center'>
             <img className='w-50' src={deadIcon} alt="" />
