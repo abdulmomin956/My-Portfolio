@@ -50,10 +50,12 @@ const Project = ({ all, data }) => {
                                                 </button>
                                             </div>
                                         </div>
-                                        <div>
-                                            <button className='btn btn-outline-light'>Live Site</button>
-                                            <button className='btn btn-outline-light'>Client Code</button>
-                                            <button className='btn btn-outline-light'>Server Code</button>
+                                        <div className='d-flex justify-content-evenly'>
+                                            <a href={item.live} target='_blank' className='btn btn-outline-light' rel="noreferrer">Live Site</a>
+                                            <a href={item.client} target='_blank' rel="noreferrer" className='btn btn-outline-light'>Client Code</a>
+                                            {
+                                                item.server && <a href={item.server} target='_blank' rel="noreferrer" className='btn btn-outline-light'>Server Code</a>
+                                            }
                                         </div>
                                     </div>
                                 </div>
