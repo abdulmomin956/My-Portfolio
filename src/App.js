@@ -8,15 +8,25 @@ import './pages/shared/custom.css'
 import NotFound from './pages/shared/NotFound';
 import Blogs from './pages/Blogs/Blogs';
 import About from './pages/About/About';
+import Details from './pages/Details/Details';
+import useData from './useData';
+
+
 
 function App() {
+  const [data, isLoading] = useData()
+  // console.log(data);
+  if (isLoading) {
+    return <h1>Loading</h1>
+  }
   return (
     <div >
       <NavigationBar />
       <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/projects' element={<Projects />}></Route>
+        <Route path='/' element={<Home data={data}></Home>}></Route>
+        <Route path='/home' element={<Home data={data}></Home>}></Route>
+        <Route path='/projects' element={<Projects data={data} />}></Route>
+        <Route path='/details/:id' element={<Details data={data} />}></Route>
         <Route path='/blog' element={<Blogs />}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='*' element={<NotFound />}></Route>

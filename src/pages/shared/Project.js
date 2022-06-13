@@ -1,21 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import useData from './useData';
+import useData from '../../useData';
 import pictureIcon from '../../images/picture-icon.svg'
 
-const Project = ({ all }) => {
-    const [data] = useData()
+const Project = ({ all, data }) => {
+
     const [zoom, setZoom] = useState(false);
-    const [zoomItem, setZoomItem] = useState('')
     const navigate = useNavigate();
     const [myArr, setMyArr] = useState([])
 
     const handleZoom = id => {
         setZoom(true);
-        setZoomItem(id);
-        console.log(id);
         const remaining = data.filter(item => item.id === id)
-        console.log(remaining);
+        // console.log(remaining);
         setMyArr(remaining)
 
 
@@ -37,12 +34,12 @@ const Project = ({ all }) => {
             <div className='container '>
                 <div className="row">
                     {
-                        data.map(item =>
+                        data?.map(item =>
                             <div key={item.id} className=' col-md-6 col-lg-4 mb-4'>
                                 <div style={{ height: '20rem' }} className="bg-dark text-white overflow-hidden card-image   p-0 card border-0 col-12 col-md-12 col-lg-12" >
                                     <img className='card-img' src={item.image} alt="" />
                                     <div className='text-white card-body card-img-overlay d-flex flex-column justify-content-between' >
-                                        <div>
+                                        <div className='btn text-white' onClick={() => navigate(`/details/${item.id}`)}>
                                             <h5 className='card-title'>{item.name}</h5>
                                             <p className='card-text'>{item.type}</p>
                                         </div>

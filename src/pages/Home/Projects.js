@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../shared/Project';
 
-const Projects = () => {
+const Projects = ({ data }) => {
 
 
 
@@ -10,7 +10,7 @@ const Projects = () => {
 
 
     return (
-        <Project all={false}></Project>
+        <Project data={data} all={false}></Project>
     );
 };
 

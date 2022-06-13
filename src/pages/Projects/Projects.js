@@ -1,11 +1,11 @@
 import React from 'react';
 import Project from '../shared/Project';
 
-const Projects = () => {
+const Projects = ({ data }) => {
     document.title = 'PROJECTS - Abdul'
 
     return (
-        <Project all={true}></Project>
+        <Project data={data} all={true}></Project>
     );
 };
 
