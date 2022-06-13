@@ -2,25 +2,25 @@
     {
         "id": 1,
         "name": "V-Leaf GYM equip",
-        "type": "warehouse management system",
+        "type": "Warehouse management system",
         "feature": "something",
-        "tech": "something",
+        "tech": "React, React-Bootstrap, Express, MongoDB, Firebase.",
         "image": "https://i.ibb.co/BnDXyms/Screenshot-2022-06-10-at-21-12-00-V-LEAF-GYM-epuipment.png"
     },
     {
         "id": 2,
         "name": "Couple Capture",
-        "type": "independence service provider",
+        "type": "Independence service provider",
         "feature": "something",
-        "tech": "something",
+        "tech": "React, React-Bootstrap, Firebase.",
         "image": "https://i.ibb.co/w4hM0Cy/Screenshot-2022-06-10-at-21-13-24-Couple-Capture.png"
     },
     {
         "id": 3,
         "name": "Tiger Carpentry",
-        "type": "manufacturer company",
+        "type": "Manufacturer company",
         "feature": "something",
-        "tech": "something",
+        "tech": "React, TailwindCSS, DaisyUI, Express, MongoDB, Firebase, JWT.",
         "image": "https://i.ibb.co/FmJZ5mV/Tiger-Carpentry-Screen.png"
     }
 ]
