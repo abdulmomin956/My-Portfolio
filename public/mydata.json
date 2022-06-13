@@ -3,33 +3,36 @@
         "id": 1,
         "name": "V-Leaf GYM equip",
         "type": "Warehouse management system",
-        "feature": "something",
+        "feature": "All users can do CRUD operations for the products after log in. The website is React single-page application. Users can log in using an email password or a google account.",
         "tech": "React, React-Bootstrap, Express, MongoDB, Firebase.",
         "image": "https://i.ibb.co/BnDXyms/Screenshot-2022-06-10-at-21-12-00-V-LEAF-GYM-epuipment.png",
         "live": "https://vleaf-gym.web.app/",
         "client": "https://github.com/abdulmomin956/V-LEAF-GYM-equipment-management-app-client",
-        "server": "https://github.com/abdulmomin956/V-LEAF-GYM-equipment-management-app-server"
+        "server": "https://github.com/abdulmomin956/V-LEAF-GYM-equipment-management-app-server",
+        "date": "3 May, 2022"
     },
     {
         "id": 2,
         "name": "Couple Capture",
         "type": "Independence service provider",
-        "feature": "something",
+        "feature": "The site has a private route. The website is a fully functional Single Page Application. Users can log in using an email password or a google account.",
         "tech": "React, React-Bootstrap, Firebase.",
         "image": "https://i.ibb.co/w4hM0Cy/Screenshot-2022-06-10-at-21-13-24-Couple-Capture.png",
         "live": "https://couple-capture.web.app/",
         "client": "https://github.com/abdulmomin956/couple-capture",
-        "server": ""
+        "server": "",
+        "date": "28 April, 2022"
     },
     {
         "id": 3,
         "name": "Tiger Carpentry",
         "type": "Manufacturer company",
-        "feature": "something",
+        "feature": " Users can buy products using Stripe, and post reviews for the site. Admin can make another person admin, remove another admin, add products, and complete the shipments. All users can update their profile info.",
         "tech": "React, TailwindCSS, DaisyUI, Express, MongoDB, Firebase, JWT.",
         "image": "https://i.ibb.co/FmJZ5mV/Tiger-Carpentry-Screen.png",
         "live": "https://tiger-carpentry.web.app/",
         "client": "https://github.com/abdulmomin956/Tiger-Carpentry-client-side",
-        "server": "https://github.com/abdulmomin956/Tiger-Carpentry-server-side"
+        "server": "https://github.com/abdulmomin956/Tiger-Carpentry-server-side",
+        "date": "25 May, 2022"
     }
 ]

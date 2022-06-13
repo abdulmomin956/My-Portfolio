@@ -25,7 +25,7 @@ const NavigationBar = () => {
                         <CustomLink to='/'>HOME</CustomLink>
                         <CustomLink to='/projects'>PROJECTS</CustomLink>
                         <CustomLink to='/blog'>BLOG</CustomLink>
-                        <CustomLink to='/about'>ABOUT</CustomLink>
+                        <CustomLink to='/about'>ABOUT ME</CustomLink>
                         {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

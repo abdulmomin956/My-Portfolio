@@ -10,6 +10,7 @@ import Blogs from './pages/Blogs/Blogs';
 import About from './pages/About/About';
 import Details from './pages/Details/Details';
 import useData from './useData';
+import Footer from './Footer/Footer';
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/about' element={<About />}></Route>
         <Route path='*' element={<NotFound />}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

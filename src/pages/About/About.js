@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => {
-    document.title = 'ABOUT - Abdul'
+    document.title = 'ABOUT ME - Abdul'
     return (
         <div style={{ marginTop: '-3.5rem' }} className='banner vh-100 text-center d-flex flex-column justify-content-center'>
             <div className="container">
