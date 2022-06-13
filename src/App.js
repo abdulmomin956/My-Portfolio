@@ -10,7 +10,7 @@ import Blogs from './pages/Blogs/Blogs';
 import About from './pages/About/About';
 import Details from './pages/Details/Details';
 import useData from './useData';
-import Footer from './Footer/Footer';
+import Footer from './pages/shared/Footer';
 
 
 
