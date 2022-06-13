@@ -18,7 +18,9 @@ function App() {
   const [data, isLoading] = useData()
   // console.log(data);
   if (isLoading) {
-    return <h1>Loading</h1>
+    return <div className='vh-100 d-flex justify-content-center align-items-center'>
+      <h1 className='text-primary'>Loading...</h1>
+    </div>
   }
   return (
     <div >
