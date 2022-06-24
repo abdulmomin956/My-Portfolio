@@ -23,32 +23,34 @@ const Details = ({ data, text }) => {
                         <h1>Project Info:</h1>
                         <hr />
                         <table>
-                            <tr>
-                                <td>Category:</td>
-                                <td>{singleItem.type}</td>
-                            </tr>
-                            <tr>
-                                <td>Technology:</td>
-                                <td>{singleItem.tech}</td>
-                            </tr>
-                            <tr>
-                                <td>Website:</td>
-                                <td>{singleItem.live}</td>
-                            </tr>
-                            <tr>
-                                <td>Client Code:</td>
-                                <td> <a href={singleItem.client}>Github</a> </td>
-                            </tr>
-                            {
-                                singleItem.server && <tr>
-                                    <td>Server Code: </td>
-                                    <td> <a href={singleItem.server}>Github</a></td>
+                            <tbody>
+                                <tr>
+                                    <td>Category:</td>
+                                    <td>{singleItem.type}</td>
                                 </tr>
-                            }
-                            <tr>
-                                <td>Date:</td>
-                                <td>{singleItem.date}</td>
-                            </tr>
+                                <tr>
+                                    <td>Technology:</td>
+                                    <td>{singleItem.tech}</td>
+                                </tr>
+                                <tr>
+                                    <td>Website:</td>
+                                    <td>{singleItem.live}</td>
+                                </tr>
+                                <tr>
+                                    <td>Client Code:</td>
+                                    <td> <a href={singleItem.client}>Github</a> </td>
+                                </tr>
+                                {
+                                    singleItem.server && <tr>
+                                        <td>Server Code: </td>
+                                        <td> <a href={singleItem.server}>Github</a></td>
+                                    </tr>
+                                }
+                                <tr>
+                                    <td>Date:</td>
+                                    <td>{singleItem.date}</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>

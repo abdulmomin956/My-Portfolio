@@ -53,7 +53,7 @@
 
 .popup-image span {
     position: absolute;
-    top: 30px;
+    top: 10px;
     right: 10px;
     font-size: 40px;
     font-weight: bolder;
@@ -67,9 +67,20 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -15rem);
+    transform: translate(-50%, -18rem);
     border: 5px solid #fff;
     border-radius: 5px;
     width: 750px;
     object-fit: cover;
+}
+
+@media only screen and (max-width:576px) {
+    .popup-image span {
+        top: 0px;
+        right: 10px;
+    }
+
+    .popup-image img {
+        transform: translate(-50%, -15rem);
+    }
 }
