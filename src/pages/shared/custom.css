@@ -36,7 +36,8 @@
     border-radius: 50%;
     color: #fff;
     text-align: center;
-    background: rgb(189, 189, 189)
+    background: rgb(189, 189, 189);
+    cursor: zoom-in;
 }
 
 .popup-image {

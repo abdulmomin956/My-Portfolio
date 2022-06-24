@@ -1,9 +1,9 @@
 import React from 'react';
 import photo from '../../images/for portfolio.png'
 import ContactMe from './ContactMe';
-import Projects from './Projects';
 import pdf from '../../images/Abdul_Momin_Resume.pdf'
 import './Home.css'
+import Project from '../shared/Project';
 
 const Home = () => {
     document.title = 'HOME - Abdul'
@@ -23,7 +23,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Projects></Projects>
+            <Project all={false}></Project>
             <ContactMe></ContactMe>
         </main>
     );

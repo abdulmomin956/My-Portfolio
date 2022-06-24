@@ -47,7 +47,7 @@ const Project = ({ all }) => {
                                         </div>
                                         <div className='d-flex justify-content-center'>
                                             <div className='circle2 d-flex align-items-center justify-content-center'>
-                                                <button style={{ background: 'rgb(189, 189, 189)' }} className='border-0' onClick={() => handleZoom(item.id)}>
+                                                <button style={{ background: 'rgb(189, 189, 189)', cursor: 'zoom-in' }} className='border-0' onClick={() => handleZoom(item.id)}>
                                                     <img style={{ height: '2rem', width: '2rem' }} className='text-white h-4 w-4 ' src={pictureIcon} alt="" />
                                                 </button>
                                             </div>
