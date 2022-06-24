@@ -11,8 +11,9 @@ import About from './pages/About/About';
 import Details from './pages/Details/Details';
 import useData from './useData';
 import Footer from './pages/shared/Footer';
+import { createContext } from 'react';
 
-
+export const MyData = createContext([])
 
 function App() {
   const [data, isLoading] = useData()
@@ -25,15 +26,19 @@ function App() {
   return (
     <div >
       <NavigationBar />
-      <Routes>
-        <Route path='/' element={<Home data={data}></Home>}></Route>
-        <Route path='/home' element={<Home data={data}></Home>}></Route>
-        <Route path='/projects' element={<Projects data={data} />}></Route>
-        <Route path='/details/:id' element={<Details data={data} />}></Route>
-        <Route path='/blog' element={<Blogs />}></Route>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='*' element={<NotFound />}></Route>
-      </Routes>
+      <MyData.Provider value={data}>
+        <Routes>
+
+          <Route path='/' element={<Home ></Home>}></Route>
+          <Route path='/home' element={<Home ></Home>}></Route>
+          <Route path='/projects' element={<Projects />}></Route>
+          <Route path='/details/:id' element={<Details data={data} />}></Route>
+
+          <Route path='/blog' element={<Blogs />}></Route>
+          <Route path='/about' element={<About />}></Route>
+          <Route path='*' element={<NotFound />}></Route>
+        </Routes>
+      </MyData.Provider>
       <Footer></Footer>
     </div>
   );

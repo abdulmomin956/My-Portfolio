@@ -5,7 +5,7 @@ import Projects from './Projects';
 import pdf from '../../images/Abdul_Momin_Resume.pdf'
 import './Home.css'
 
-const Home = ({ data }) => {
+const Home = () => {
     document.title = 'HOME - Abdul'
     return (
         <main>
@@ -23,7 +23,7 @@ const Home = ({ data }) => {
                     </div>
                 </div>
             </div>
-            <Projects data={data}></Projects>
+            <Projects></Projects>
             <ContactMe></ContactMe>
         </main>
     );

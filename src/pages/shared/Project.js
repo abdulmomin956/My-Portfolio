@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import useData from '../../useData';
 import pictureIcon from '../../images/picture-icon.svg'
+import { useContext } from 'react';
+import { MyData } from '../../App';
 
-const Project = ({ all, data }) => {
+const Project = ({ all }) => {
 
+    const data = useContext(MyData);
     const [zoom, setZoom] = useState(false);
     const navigate = useNavigate();
     const [myArr, setMyArr] = useState([])
