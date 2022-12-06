@@ -12,6 +12,7 @@ import Details from './pages/Details/Details';
 import useData from './useData';
 import Footer from './pages/shared/Footer';
 import { createContext } from 'react';
+import Tiger from './pages/link/Tiger';
 
 export const MyData = createContext([])
 
@@ -35,6 +36,7 @@ function App() {
           <Route path='/details/:id' element={<Details data={data} />}></Route>
 
           <Route path='/blog' element={<Blogs />}></Route>
+          <Route path='/link/tiger' element={<Tiger />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
